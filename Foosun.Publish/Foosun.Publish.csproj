@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCCB0523-7958-4815-9039-84DD6289FF9B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Foosun.Publish</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data" />
+    <Reference Include="Foosun.Model">
+      <HintPath>..\Foosun.Model\bin\Debug\Foosun.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\引用组件\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Foosun.Config">
+      <HintPath>..\Foosun.Config\bin\Debug\Foosun.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="Foosun.DALFactory">
+      <HintPath>..\Foosun.DALFactory\bin\Debug\Foosun.DALFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="Foosun.DALProfile">
+      <HintPath>..\Foosun.DALProfile\bin\Debug\Foosun.DALProfile.dll</HintPath>
+    </Reference>
+    <Reference Include="Foosun.Global">
+      <HintPath>..\Foosun.Global\bin\Debug\Foosun.Global.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="LitJSON">
+      <HintPath>..\引用组件\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Foosun\Publish\LabelMass.cs" />
+    <Compile Include="Foosun\Publish\Label.cs" />
+    <Compile Include="Foosun\Publish\DynamicLabel.cs" />
+    <Compile Include="Foosun\Publish\CommonData.cs" />
+    <Compile Include="Foosun\Publish\UltiPublish.cs" />
+    <Compile Include="Foosun\Publish\Properties\Settings.cs" />
+    <Compile Include="Foosun\Publish\General.cs" />
+    <Compile Include="Foosun\Publish\TempType.cs" />
+    <Compile Include="Foosun\Publish\Template.cs" />
+    <Compile Include="Foosun\Publish\FreeLabel.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\PublishPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\HelloWorldCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\HelloWorldCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\LoginCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\LoginCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\PublishNewsCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\PublishNewsCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetNewsAllCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetNewsAllCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetNewsLastCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetNewsLastCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetNewsUnHtmlCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetNewsUnHtmlCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetNewsByCreateTimeCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetNewsByCreateTimeCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetNewsByClassIDCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetNewsByClassIDCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\PublishSingNewsCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\PublishSingNewsCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetPublishResultCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetPublishResultCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetNewsListCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetNewsListCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetSpecialListCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetSpecialListCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetPageListCompletedEventHandler.cs" />
+    <Compile Include="Foosun\Publish\FoosunWebServircePublish\GetPageListCompletedEventArgs.cs" />
+    <Compile Include="Foosun\Publish\LabelParameter.cs" />
+    <Compile Include="Foosun\Publish\LabelType.cs" />
+    <Compile Include="Foosun\Publish\DropPublish.cs" />
+    <Compile Include="Foosun\Publish\UltiPublishServirce.cs" />
+    <Compile Include="Foosun\Publish\LabelStyle.cs" />
+    <Compile Include="Foosun\Publish\LabelParse.cs" />
+    <Compile Include="Foosun\Publish\CustomLabel.cs" />
+    <Compile Include="Foosun\Publish\ChannelLabel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{c2f8770e-a958-422d-b727-53323d5f7d47}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Foosun.CMS\Foosun.CMS.csproj">
+      <Project>{d42b03c9-3472-4ad1-bf92-ada5e956631e}</Project>
+      <Name>Foosun.CMS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Foosun.IDAL\Foosun.IDAL.csproj">
+      <Project>{9ddb609a-4bf6-4cac-91d8-9135680c1d4a}</Project>
+      <Name>Foosun.IDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

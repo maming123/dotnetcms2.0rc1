@@ -21,6 +21,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,10 +44,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Foosun.Publish, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\引用组件\Foosun.Publish.dll</HintPath>
-    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\引用组件\HtmlAgilityPack.dll</HintPath>
@@ -4420,6 +4420,10 @@
     <ProjectReference Include="..\Foosun.PlugIn\Foosun.PlugIn.csproj">
       <Project>{7988E626-1FB5-460D-87AE-CA61625CFAFB}</Project>
       <Name>Foosun.PlugIn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Foosun.Publish\Foosun.Publish.csproj">
+      <Project>{fccb0523-7958-4815-9039-84dd6289ff9b}</Project>
+      <Name>Foosun.Publish</Name>
     </ProjectReference>
     <ProjectReference Include="..\Foosun.SQLServerDAL\Foosun.SQLServerDAL.csproj">
       <Project>{13561DEC-646E-4F03-9884-C92814DF258E}</Project>
