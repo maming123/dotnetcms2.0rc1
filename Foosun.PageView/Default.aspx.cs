@@ -66,13 +66,13 @@ namespace Foosun.PageView
         protected string getjs()
         {
             return "";
-            string getajaxJS = "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/Scripts/jquery.js\"></script>\r\n";
-            getajaxJS += "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/Scripts/public.js\"></script>\r\n";
-            getajaxJS += "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/Scripts/jspublick.js\"></script>\r\n";
-            getajaxJS += "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/ckplayer/js/ckplayer.js\"></script>\r\n";
-            getajaxJS += "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/ckplayer/js/load.js\"></script>\r\n";
+            //string getajaxJS = "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/Scripts/jquery.js\"></script>\r\n";
+            //getajaxJS += "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/Scripts/public.js\"></script>\r\n";
+            //getajaxJS += "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/Scripts/jspublick.js\"></script>\r\n";
+            //getajaxJS += "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/ckplayer/js/ckplayer.js\"></script>\r\n";
+            //getajaxJS += "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/ckplayer/js/load.js\"></script>\r\n";
             //getajaxJS += "\r\n<!--Created by " + Foosun.Config.verConfig.Productversion + " For Foosun Inc. Published at " + DateTime.Now + "-->\r\n";
-            return getajaxJS;
+            //return getajaxJS;
         }
     }
 }
