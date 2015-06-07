@@ -65,7 +65,7 @@ namespace Foosun.PageView
 
         protected string getjs()
         {
-            return "";
+            return ""; 
             //string getajaxJS = "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/Scripts/jquery.js\"></script>\r\n";
             //getajaxJS += "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/Scripts/public.js\"></script>\r\n";
             //getajaxJS += "<script language=\"javascript\" type=\"text/javascript\" src=\"" + Common.Public.GetSiteDomain() + "/Scripts/jspublick.js\"></script>\r\n";
