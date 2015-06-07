@@ -1,0 +1,113 @@
+* { margin: 0; padding: 0; border: 0; font-family: sans-serif; font-size: 1em; font-weight: normal; font-style: normal; text-decoration: none; }
+html { height:100%; background:#0E6D38; }
+body {overflow: hidden; }
+#place { position: relative; width: 7120px; height: 560px; margin: 0px;}
+#wrapper1, #wrapper2, #wrapper3 ,#wrapper4, #wrapper5, #wrapper6, #wrapper7{ width: 960px; height: 480px; position: absolute; top: 80px; }
+#wrapper1 { left: 0px; }
+#wrapper2 { left: 1040px; }
+#wrapper3 { left: 2080px; }
+#wrapper4 { left: 3120px; }
+#wrapper5 { left: 4140px; }
+#wrapper6 { left: 5160px; }
+#wrapper7 { left: 6180px; }
+#name1, #name2, #name3 { font-family: Microsoft YaHei, Arial, Helvetica, sans-serif; font-size: 40px; color: #fff; position: absolute; top: 0px }
+#name1 { left: 5px }
+#name2 { left: 1045px }
+#name3 { left: 2085px }
+#net { position: absolute; top: 0px; right: 0px; margin: 0px !important; height: 60%; width: auto; cursor: pointer; }
+#button1to2, #button2to1 {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 81px;
+	left: 984px;
+}
+#button1to2 { background: url(images/arrow-hover.png) no-repeat center center; }
+#button2to1 { background: url(images/arrow-back.png) center center; display: none; }
+#button2to3, #button3to2 { position: absolute; width: 30px; height: 30px; top: 85px; left: 2025px; }
+#button3to4, #button4to3 { position: absolute; width: 30px; height: 30px; top: 85px; left: 3065px; }
+#button4to5, #button5to4 { position: absolute; width: 30px; height: 30px; top: 85px; left: 4085px; }
+#button5to6, #button6to5 { position: absolute; width: 30px; height: 30px; top: 85px; left: 5105px; }
+#button6to7, #button7to6 { position: absolute; width: 30px; height: 30px; top: 85px; left: 6125px; }
+#button2to3, #button3to4 ,#button4to5,#button5to6,#button6to7 { background: url(images/arrow.png) center center; display: none; }
+#button3to2, #button4to3 ,#button5to4,#button6to5,#button7to6     { background: url(images/arrow-back.png) center center; display: none; }
+#button1to2:hover, #button2to3:hover, #button3to4:hover, #button4to5:hover, #button5to6:hover, #button6to7:hover { cursor: pointer; background: url(images/arrow-hover.png) center center; }
+#button2to1:hover, #button3to2:hover, #button4to3:hover, #button5to4:hover, #button6to5:hover, #button7to6:hover { cursor: pointer; background: url(images/arrow-back-hover.png) center center; }
+form { width: 306px; height: 30px; position: absolute; right:5px; top: -45px; text-align: center; padding: 0px; margin: 0px; background: #fff; border: 2px #fff solid; }
+input { width: 230px;/*568 povodne*/ height: 30px; background: #fff; padding: 0px; margin: 0px; color: #333; font-size: 16px; line-height: 30px; float:left; padding:0 5px; }
+form:hover { border: 2px #00aef0 solid; outline: none; }
+ input::-webkit-input-placeholder {
+ color: #ccc;
+ font-style:oblique;
+}
+input:-moz-placeholder {
+ color: #ccc;
+ font-style: oblique;
+}
+button { height: 30px; width: 30px;/*50 povodne*/ position: absolute; top: 0px; right: 3px; background: url(images/search.png) no-repeat center;/**/ }
+button:hover { background: url(images/search-hover.png) no-repeat center; cursor: pointer; }
+#search-engine { height: 30px; width: 30px; position: absolute; top: 0px; right: 33px; margin:0; }
+#search-engine:hover { background: url(images/search-hover.png) center center no-repeat; cursor: pointer; border: 0px !important; box-shadow: 0px 0px 0px #fff !important; margin:0; }
+#engines { width: 120px; height: 30px; position: absolute; top: 0px; right: 33px; display: none; margin:0; background: #FFF; }
+#google { background: url(images/google.png) center center no-repeat; }
+#google:hover { background: url(images/google-hover.png) center center no-repeat; }
+#bing { background: url(images/bing.png) center center no-repeat; }
+#bing:hover { background: url(images/bing-hover.png) center center no-repeat; }
+#yahoo { background: url(images/yahoo.png) center center no-repeat; }
+#yahoo:hover { background: url(images/yahoo-hover.png) center center no-repeat; }
+#baidu { background: url(images/baidu.png) center center no-repeat; }
+#baidu:hover { background: url(images/baidu-hover.png) center center no-repeat; }
+#engines div:hover { border: 0px !important; box-shadow: 0px 0px 0px #fff !important; margin: 0px !important; cursor: pointer; }
+#engines div { width: 30px; height: 30px; float:left; margin: 0px !important; padding: 0px !important; }
+#wrapper1 div.site, #wrapper2 div.site, #wrapper3 div.site { margin: 5px; text-align: left;/*-moz-box-shadow:2px 2px 8px #333;
+	-webkit-box-shadow:2px 2px 8px #333;
+	box-shadow:2px 2px 8px #333;*/
+}
+/*#wrapper1 div a, #wrapper2 div a, #wrapper3 div a { display: block; width: 100%; height: 100%; }*/
+.title { position: absolute; bottom: 10px; left: 5px; font-weight:bold; text-align: left !important; color: #fff; line-height: 100%; }
+.title:hover { border: 0px !important; box-shadow: none !important; margin: 5px !important; }
+.w1{
+	width: 960px; height: 460px;
+	overflow:hidden;
+	margin-top:20px;
+	float:left;
+	}
+.w1 ul li{
+	float:left;
+	display:block;
+	height:116px;
+	margin:5px 5px;
+	cursor:pointer;
+	}
+.w1 ul li .tl1{
+	margin:0 5px;
+	}
+.w1 ul li .span{
+	position:relative;
+	top:95px;
+	left:10px;
+	float:left;
+	width:auto;
+	cursor:pointer;
+	font-size:14px;
+	}
+.w1 ul li img{
+	height:116px;
+	}
+	
+
+
+
+
+#wrapper2 #thumb2-1 { width: 150px; height: 150px; position: absolute; left: 0px; top: 0px; }
+#wrapper2 #thumb2-2 { width: 150px; height: 150px; position: absolute; left: 160px; top: 0px; }
+#wrapper2 #thumb2-3 { width: 150px; height: 150px; position: absolute; left: 0px; top: 160px; }
+#wrapper2 #thumb2-4 { width: 150px; height: 150px; position: absolute; left: 160px; top: 160px; }
+#wrapper2 #thumb2-5 { width: 150px; height: 150px; position: absolute; left: 0px; top: 320px; }
+#wrapper2 #thumb2-6 { width: 150px; height: 150px; position: absolute; left: 160px; top: 320px; }
+#wrapper2 #thumb2-7 { width: 310px; height: 470px; position: absolute; left: 320px; top: 0px; }
+#wrapper2 #thumb2-8 { width: 310px; height: 470px; position: absolute; left: 640px; top: 0px; }
+#wrapper2 form { display: none; }
+/*33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333*/
+
+#wrapper3 #thumb3-1 { width: 950px; height: 470px; position: absolute; left: 0px; top: 0px; }

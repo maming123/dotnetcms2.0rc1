@@ -1,0 +1,1 @@
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="survey_Vote_Show" Codebehind="Vote_Show.aspx.cs" %>

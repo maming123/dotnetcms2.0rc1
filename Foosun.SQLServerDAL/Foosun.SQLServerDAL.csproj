@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13561DEC-646E-4F03-9884-C92814DF258E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Foosun.SQLServerDAL</RootNamespace>
+    <AssemblyName>Foosun.SQLServerDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="AdminGroup.cs" />
+    <Compile Include="Ads.cs" />
+    <Compile Include="Arealist.cs" />
+    <Compile Include="Attachments.cs" />
+    <Compile Include="Collect.cs" />
+    <Compile Include="Constr.cs" />
+    <Compile Include="CustomForm.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DbBase.cs" />
+    <Compile Include="DefineClass.cs" />
+    <Compile Include="DefineData.cs" />
+    <Compile Include="DefineSave.cs" />
+    <Compile Include="DefineTable.cs" />
+    <Compile Include="Discuss.cs" />
+    <Compile Include="DropTemplet.cs" />
+    <Compile Include="DynamicTrans.cs" />
+    <Compile Include="FreeLabel.cs" />
+    <Compile Include="Friend.cs" />
+    <Compile Include="FrindLink.cs" />
+    <Compile Include="Info.cs" />
+    <Compile Include="Label.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="Mycom.cs" />
+    <Compile Include="Navi.cs" />
+    <Compile Include="News.cs" />
+    <Compile Include="NewsClass.cs" />
+    <Compile Include="NewsGen.cs" />
+    <Compile Include="NewsJS.cs" />
+    <Compile Include="NewsJSFile.cs" />
+    <Compile Include="NewsJSTemplet.cs" />
+    <Compile Include="NewsJSTempletClass.cs" />
+    <Compile Include="NewsSpecial.cs" />
+    <Compile Include="Pagination.cs" />
+    <Compile Include="Photo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publish.cs" />
+    <Compile Include="Recyle.cs" />
+    <Compile Include="RootPublic.cs" />
+    <Compile Include="Rss.cs" />
+    <Compile Include="Search.cs" />
+    <Compile Include="Stat.cs" />
+    <Compile Include="Style.cs" />
+    <Compile Include="Survey.cs" />
+    <Compile Include="sys.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserList.cs" />
+    <Compile Include="UserLogin.cs" />
+    <Compile Include="UserMisc.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{C2F8770E-A958-422D-B727-53323D5F7D47}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Foosun.Config\Foosun.Config.csproj">
+      <Project>{8ECBDC11-8313-47A8-90EC-5B79253B66E9}</Project>
+      <Name>Foosun.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Foosun.DALProfile\Foosun.DALProfile.csproj">
+      <Project>{94995506-932D-4D56-8432-BFE69AF8E6F8}</Project>
+      <Name>Foosun.DALProfile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Foosun.Global\Foosun.Global.csproj">
+      <Project>{A5AE8A30-4BB9-4788-BD89-7019C7C51785}</Project>
+      <Name>Foosun.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Foosun.IDAL\Foosun.IDAL.csproj">
+      <Project>{9DDB609A-4BF6-4CAC-91D8-9135680C1D4A}</Project>
+      <Name>Foosun.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Foosun.Model\Foosun.Model.csproj">
+      <Project>{3E23F000-69E1-49EA-9554-421F632A6D80}</Project>
+      <Name>Foosun.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

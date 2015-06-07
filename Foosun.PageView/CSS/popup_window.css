@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/*SelectNewsClass.aspx*/
+
+.co_from{
+	margin-right:5px;
+	margin-bottom:5px;
+	line-height:24px;
+	_padding-bottom:10px;
+	}
+.co-lan{
+	margin-right:30;
+	}
+
+/*SelectSource.aspx*/
+
+.source_ye{
+    padding-top:0px;
+	padding-left:10px;
+	padding-bottom:0px; 
+	font-size:12px;
+	}
+.source_ye span,.source_ye span{
+	margin:0 5px;
+	}
+	
+/*SelectFiles.aspx*/	
+.files_fid{
+	line-height:24px;
+	}	
+.files_list{
+	line-height:24px;
+	}	
+.files_list	 table{
+	margin:10px;
+	padding:0 5px;
+	line-height:24px;
+	}
+.files_list	 table a{
+	margin:0 5px;
+	}	
+	
+/*SelectSource.aspx*/
+
+.source_top{
+	padding-left:10px;
+	line-height:24px;
+	margin-bottom:10px;
+	margin-right:10px;
+	}
+
+/*selectrulePram.aspx*/
+.ctrule{
+	line-height:24px;
+	}
+.ctrule span{
+	margin-right:10px;
+	margin-left:5px;
+	}
+
+/*createLabelSpecial.aspx*/
+.lebelsp{
+	margin-right:20px;
+	}
+
+
+/*LabelList.aspx*/
+
+.midtxtad{
+	margin:5px;
+	padding:8px 5px;
+	float:left;
+	width:96%;
+	}
+.midtxtad a{
+	text-decorationn:none;
+	}
+.midtxtad a:hover{
+	color:#F00;
+	}
+.midtxtad ul{
+	margin:0 15px;
+	padding:0;
+	float:left;
+	display:inline;
+	}
+.midtxtad li{
+	float:left;
+	width:50%;
+	height:22px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	

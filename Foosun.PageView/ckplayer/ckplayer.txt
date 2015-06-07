@@ -1,0 +1,1 @@
+﻿{p->1}{x->http://192.168.1.101:85/ckplayer/ckplayer.xml}{s->0}{l->}{r->}{t->}

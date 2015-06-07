@@ -1,0 +1,1 @@
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="survey_Vote_Ajax" Codebehind="Vote_Ajax.aspx.cs" %>

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CustomFormList.aspx.cs" Inherits="Foosun.PageView.customform.CustomFormList" %>

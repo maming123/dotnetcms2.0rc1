@@ -1,0 +1,1 @@
+<%@ Page Language="C#" AutoEventWireup="true" ResponseEncoding="utf-8" Inherits="SelectNewsClassAjax" Codebehind="SelectNewsClassAjax.aspx.cs" %>

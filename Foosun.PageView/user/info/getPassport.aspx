@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="getPassport.aspx.cs" Inherits="Foosun.PageView.user.info.getPassport" %>

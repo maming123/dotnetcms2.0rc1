@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="mainWindow">
+<head>
+    <title>进度条</title>
+    <script language="javascript">
+        function SetPorgressBar(pos, ptype, count) {
+            if (ptype == "new") {
+                document.getElementById("head").innerHTML = "正在发布新闻,总共" + count + "条,正在发布第" + pos + "条<br />";
+            } else if (ptype == "class") {
+                document.getElementById("head").innerHTML = "正在发布栏目,总共" + count + "条,正在发布第" + pos + "条<br />";
+            } else if (ptype == "special") {
+                document.getElementById("head").innerHTML = "正在发布专题,总共" + count + "条,正在发布第" + pos + "条<br />";
+            } else if (ptype == "page") {
+                document.getElementById("head").innerHTML = "正在发布单页新闻,总共" + count + "条,正在发布第" + pos + "条<br />";
+            } else if (ptype == "index") {
+                document.getElementById("head").innerHTML = "正在发布首页<br />";
+            }
+            //设置进度条居中
+            var screenHeight = window["mainWindow"].offsetHeight;
+            var screenWidth = window["mainWindow"].offsetWidth;
+            ProgressBarSide.style.width = Math.round(screenWidth / 2);
+            ProgressBarSide.style.left = Math.round(screenWidth / 4);
+            ProgressBarSide.style.top = Math.round(screenHeight / 2);
+            ProgressBarSide.style.height = "21px";
+            ProgressBarSide.style.display = "";
+
+            //设置进度条百分比
+            document.getElementById("ProgressBar").style.width = ((parseInt(pos) / parseInt(count)) * 100) + "%";
+        }
+        //完成后隐藏进度条
+        function SetCompleted(ptype) {
+            if (ptype == "new") {
+                document.getElementById("head").innerHTML = "发布新闻完成<br />";
+            } else if (ptype == "class") {
+                document.getElementById("head").innerHTML = "发布栏目完成<br />";
+            } else if (ptype == "special") {
+                document.getElementById("head").innerHTML = "发布专题完成<br />";
+            } else if (ptype == "page") {
+                document.getElementById("head").innerHTML = "发布单页新闻完成<br />";
+            } else {
+                document.getElementById("head").innerHTML = "发布首页完成<br />";
+            }
+        }
+     </script>  
+</head>
+    <body>
+    <div id="head" style="line-height:30px; text-align:center;"></div>
+    <div id="ProgressBarSide" style="position:absolute;height:21px; margin-top:10px;width:98%; border:1px solid #000; color:Silver;display:block;">
+        <div id="ProgressBar" style="position:absolute;height:21px;width:auto;background-color:#008BCE;"></div>
+    </div>
+    </body>
+</html>

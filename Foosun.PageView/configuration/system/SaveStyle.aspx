@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SaveStyle.aspx.cs" Inherits="Foosun.PageView.configuration.system.SaveStyle" %>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2F8770E-A958-422D-B727-53323D5F7D47}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="COM.Excel">
+      <HintPath>..\..\..\..\..\个人项目\股票\StockServer\temp\CodematicDemo\Common\bin\Debug\COM.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel">
+      <HintPath>..\..\..\..\..\个人项目\股票\StockServer\temp\CodematicDemo\Common\bin\Debug\Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OpenSmtp">
+      <HintPath>..\..\..\..\..\个人项目\股票\StockServer\temp\CodematicDemo\Common\bin\Debug\OpenSmtp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AliPay.cs" />
+    <Compile Include="Computer.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="DataCache.cs" />
+    <Compile Include="DataToExcel.cs" />
+    <Compile Include="FileAction.cs" />
+    <Compile Include="GlobalAssemblyInfo.cs" />
+    <Compile Include="HProgressBar.cs" />
+    <Compile Include="HTextProgressBar.cs" />
+    <Compile Include="HttpProc.cs" />
+    <Compile Include="ImagePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="INIFile.cs" />
+    <Compile Include="Input.cs" />
+    <Compile Include="MailSender.cs" />
+    <Compile Include="MessageBox.cs" />
+    <Compile Include="NetSocket.cs" />
+    <Compile Include="PageValidate.cs" />
+    <Compile Include="Public.cs" />
+    <Compile Include="Rand.cs" />
+    <Compile Include="RMB.cs" />
+    <Compile Include="ServerInfo.cs" />
+    <Compile Include="StringPlus.cs" />
+    <Compile Include="TimeParser.cs" />
+    <Compile Include="TrustAllCertificatePolicy.cs" />
+    <Compile Include="UrlOper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Foosun.Config\Foosun.Config.csproj">
+      <Project>{8ECBDC11-8313-47A8-90EC-5B79253B66E9}</Project>
+      <Name>Foosun.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Foosun.Global\Foosun.Global.csproj">
+      <Project>{A5AE8A30-4BB9-4788-BD89-7019C7C51785}</Project>
+      <Name>Foosun.Global</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

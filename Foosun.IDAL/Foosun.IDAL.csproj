@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9DDB609A-4BF6-4CAC-91D8-9135680C1D4A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Foosun.IDAL</RootNamespace>
+    <AssemblyName>Foosun.IDAL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IAdmin.cs" />
+    <Compile Include="IAdminGroup.cs" />
+    <Compile Include="IAds.cs" />
+    <Compile Include="IArealist.cs" />
+    <Compile Include="IAttachments.cs" />
+    <Compile Include="ICollect.cs" />
+    <Compile Include="IConstr.cs" />
+    <Compile Include="ICustomForm.cs" />
+    <Compile Include="IDatabase.cs" />
+    <Compile Include="IDefineClass.cs" />
+    <Compile Include="IDefineData.cs" />
+    <Compile Include="IDefineSave.cs" />
+    <Compile Include="IDefineTable.cs" />
+    <Compile Include="IDiscuss.cs" />
+    <Compile Include="IDropTemplet.cs" />
+    <Compile Include="IDynamicTrans.cs" />
+    <Compile Include="IFreeLabel.cs" />
+    <Compile Include="IFriend.cs" />
+    <Compile Include="IFrindLink.cs" />
+    <Compile Include="IInfo.cs" />
+    <Compile Include="ILabel.cs" />
+    <Compile Include="IMessage.cs" />
+    <Compile Include="IMycom.cs" />
+    <Compile Include="INavi.cs" />
+    <Compile Include="INews.cs" />
+    <Compile Include="INewsClass.cs" />
+    <Compile Include="INewsGen.cs" />
+    <Compile Include="INewsJS.cs" />
+    <Compile Include="INewsJSFile.cs" />
+    <Compile Include="INewsJSTemplet.cs" />
+    <Compile Include="INewsJSTempletClass.cs" />
+    <Compile Include="INewsSpecial.cs" />
+    <Compile Include="IPagination.cs" />
+    <Compile Include="IPhoto.cs" />
+    <Compile Include="IPublish.cs" />
+    <Compile Include="IRecyle.cs" />
+    <Compile Include="IRootPublic.cs" />
+    <Compile Include="IRss.cs" />
+    <Compile Include="ISearch.cs" />
+    <Compile Include="IStat.cs" />
+    <Compile Include="IStyle.cs" />
+    <Compile Include="ISurvey.cs" />
+    <Compile Include="Isys.cs" />
+    <Compile Include="IUser.cs" />
+    <Compile Include="IUserConstr.cs" />
+    <Compile Include="IUserList.cs" />
+    <Compile Include="IUserLogin.cs" />
+    <Compile Include="IUserMisc.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Foosun.Model\Foosun.Model.csproj">
+      <Project>{3E23F000-69E1-49EA-9554-421F632A6D80}</Project>
+      <Name>Foosun.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

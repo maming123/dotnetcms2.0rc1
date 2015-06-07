@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{#history_PageTitle}</title>
+<meta name="Keywords" content="{FS_S_Meta关键字}" />
+<meta name="Description" content="{FS_S_Meta描述}" />
+<link type="text/css" rel="stylesheet" href="/Templets/css/base.css" />
+<link type="text/css" rel="stylesheet" href="/Templets/css/style.css" />
+
+<script type="text/javascript" src="/Scripts/jquery.js"></script>
+<script type="text/javascript" src="/Scripts/jspublick.js" charset="utf-8"></script>
+<link href="/sysImages/css/PagesCSS.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="wear">
+    <div class="top">
+  	<img src="/Templets/images/main_02.gif" alt="" />
+  </div>
+  <div class="menu">
+    <ul class="menu_ul">
+      {FS_S_总站导航}
+    </ul>
+  </div>
+  <div class="f1">
+     <div class="liel">
+        <div class="wei">
+          您当前的位置：{FS_S_位置导航}
+        </div>
+        <div class="nei">
+                       <h4>{#history_PageTitle}</h4>
+           <div class="nei_shi">
+              <span>作者： {#history_PageAuthor}</span>	<span>{#history_PageSouce}</span>	<span>发布时间：{#history_PageCreatTime}</span>
+           </div>
+           <div class="nei_p">
+           	{#history_PageContent}
+           </div>
+           </div>
+     </div>
+     <div class="f1_r_g">
+       <div class="lf1_r">
+         <div class="f1_r_top"><strong>{FS_S_栏目名称}</strong><a href="{FS_S_栏目链接}">更多 >></a></div>
+         <div class="lf1_r_bot">
+           <ul>
+              {FS_S_栏目导航}
+           </ul>
+         </div>
+       </div>
+       <div class="lf1_r">
+         <div class="f1_r_top"><strong>投资信息</strong><a href="/html/tzxx/">更多 >></a></div>
+         <div class="f1_r_bot">
+           <ul>
+              {FS_S_投资信息}
+           </ul>
+         </div>
+       </div>
+       <div class="lf1_r">
+         <div class="f1_r_top"><strong>招考信息</strong><a href="/html/zkxx/">更多 >></a></div>
+         <div class="f1_r_bot">
+           <ul>
+              {FS_S_招考信息}
+           </ul>
+         </div>
+       </div>
+     </div>
+  </div>
+  <div class="f4">
+    <span>友情链接:</span>    <select onChange="if(this.value!='') window.open(this.value,'','');">
+      <option value="" selected="selected">国家部委网站</option>
+      <option value="http://www.mfa.gov.cn">外交部</option>
+      <option value="http://www.ndrc.gov.cn">发展改革委</option>
+      <option value="http://www.moe.gov.cn">教育部</option>
+      <option value="http://www.most.gov.cn">科技部</option>
+      <option value="http://www.seac.gov.cn">国家民委</option>
+      <option value="http://www.mps.gov.cn">公安部</option>
+      <option value="http://www.mos.gov.cn">监察部</option>
+      <option value="http://www.mca.gov.cn">民政部</option>
+    </select>
+    <select onChange="if(this.value!='') window.open(this.value,'','');">
+      <option value="" selected="selected">地方政务链接</option>
+      <option value="http://www.chengdu.gov.cn">成都市</option>
+      <option value="http://www.pzh.gov.cn">攀枝花市</option>
+      <option value="http://www.luzhou.gov.cn">泸州市</option>
+      <option value="http://www.deyang.gov.cn">德阳市</option>
+      <option value="http://www.mianyang.gov.cn">绵阳市</option>
+      <option value="http://www.cngy.gov.cn">广元市</option>
+      <option value="http://www.ziyang.gov.cn">资阳市</option>
+      <option value="http://www.ms.gov.cn">眉山市</option>
+      <option value="http://www.nanchong.gov.cn">南充市</option>
+      <option value="http://www.yb.gov.cn">宜宾市</option>
+      <option value="http://www.dazhou.gov.cn">达州市</option>
+      <option value="http://www.cnbz.gov.cn">巴中市</option>
+      <option value="http://www.zg.gov.cn">自贡市</option>
+      <option value="http://www.21-sf.net">什邡在线</option>
+      <option value="http://www.luxian.gov.cn">泸县人民政府</option>
+      <option value="http://www.cdqingyang.gov.cn">成都青羊区政府</option>
+    </select>
+    <select onChange="if(this.value!='') window.open(this.value,'','');">
+      <option value="" selected="selected">行业网站</option>
+      <option value="http://www.wuliangye.com.cn">五粮液集团</option>
+      <option value="http://sc.ct10000.com/cms/web/0831/index.shtml">电信宜宾分公司</option>
+      <option value="http://www.sc.10086.cn">移动宜宾分公司</option>
+      <option value="http://yb10010.com">联通宜宾分公司</option>
+      <option value="http://www.cttsc.com">铁通四川分公司</option>
+      <option value="http://www.ybty.com">天原股份有限公司</option>
+      <option value="http://www.cjnf.com.cn">中核建中核燃料</option>
+    </select>
+    <select onChange="if(this.value!='') window.open(this.value,'','');">
+      <option value="" selected="selected">新闻媒体网站</option>
+      <option value="http://www.ybtv.cc">宜宾电视台</option>
+      <option value="http://www.cctv.com">中国中央电视台</option>
+    </select>
+  </div>
+  <div class="ban">
+    {FS_S_版权信息}
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{FS_S_页面标题}</title>
+<meta name="Keywords" content="{FS_S_Meta关键字}" />
+<meta name="Description" content="{FS_S_Meta描述}" />
+<link type="text/css" rel="stylesheet" href="/Templets/css/base.css" />
+<link type="text/css" rel="stylesheet" href="/Templets/css/style.css" />
+<script type="text/javascript" language="javascript">
+//<!CDATA[
+function g(o) { return document.getElementById(o); }
+function hover_zzjs_net(n,m,k) {
+    //m表示开始id，k表示结束id
+    for (var i = m; i <= k; i++) {
+        g('tab_zzjs_' + i).className = 'nor_zzjs';
+         g('tab_zzjs_0' + i).className = 'undis_zzjs_net'; 
+    }
+     g('tab_zzjs_0' + n).className = 'dis_zzjs_net';
+      g('tab_zzjs_' + n).className = 'hovertab_zzjs';
+}
+</script>
+</head>
+
+<body>
+<div class="wear">
+    <div class="top">
+  	<img src="/Templets/images/main_02.gif" alt="" />
+  </div>
+  <div class="menu">
+    <ul class="menu_ul">
+      {FS_S_总站导航}
+    </ul>
+  </div>
+  <div class="f1">
+     <div class="f1_l">
+     	{FS_S_幻灯新闻}
+     </div>
+     <div class="f1_c">
+        <div class="f1_c_more"><a href="/html/xwzx/">更多 >></a></div>
+        <div class="f1_c_top">
+          {FS_S_新闻动态-pic-navi}
+      </div>
+        <div class="f1_c_lie">
+          <ul>
+             {FS_S_新闻动态-list}
+          </ul>
+        </div>
+     </div>
+     <div class="f1_r">
+        <div class="f1_r_top"><strong>政务动态</strong><a href="/html/zwdt/">更多 >></a></div>
+        <div class="f1_r_bot">
+           <ul>
+              {FS_S_政务动态}
+          </ul>
+         </div>
+     </div>
+  </div>
+  <div class="f1">
+    <div class="f2_l">
+      <div class="f2_l_top"><span>招考信息</span><a href="/html/zkxx/">更多 >></a></div>
+      <div class="f2_l_img">{FS_S_招考信息-图}</div>
+      <div class="f2_l_li">
+        <ul>
+          {FS_S_招考信息-list}
+        </ul>
+      </div>
+    </div>
+    <div class="f2_c">
+        <div class="f2_c_top">
+          <ul class="tab_zzjs_" id="tab_zzjs_">
+           <li id="tab_zzjs_1" class="hovertab_zzjs" onclick="x:hover_zzjs_net(1,1,4);">社会经济</li>
+           <li id="tab_zzjs_2" class="nor_zzjs" onclick="x:hover_zzjs_net(2,1,4);">民族风情</li>
+           <li id="tab_zzjs_3" class="nor_zzjs" onclick="x:hover_zzjs_net(3,1,4);">交通概况</li>
+           <li id="tab_zzjs_4" class="nor_zzjs" onclick="x:hover_zzjs_net(4,1,4);">百姓生活</li>
+          </ul>
+         </div>
+        <div class="f2_c_bot">
+         <div class="dis_zzjs_net" id="tab_zzjs_01">
+            <div class="f2_c_bot_li">
+               <ul>
+                 {FS_S_社会经济-list}
+                 </ul>
+            </div>
+         </div>
+         <div class="undis_zzjs_net" id="tab_zzjs_02">
+            <div class="f2_c_bot_li">
+               <ul>
+                 {FS_S_民族风情-list}
+                 </ul>
+            </div>
+         </div>
+         <div class="undis_zzjs_net" id="tab_zzjs_03">
+            <div class="f2_c_bot_li">
+               <ul>
+                 {FS_S_交通概况-list}      
+                 </ul>
+            </div>
+         </div>
+         <div class="undis_zzjs_net" id="tab_zzjs_04">
+            <div class="f2_c_bot_li">
+               <ul>
+                 {FS_S_百姓生活-list}                 
+                 </ul>
+            </div>
+         </div>
+      </div>
+      </div>
+    <div class="f2_l">
+      <div class="f2_l_top"><span>执法监管</span><a href="/html/zfjg/">更多 >></a></div>
+      <div class="f2_l_img">{FS_S_执法监管-图}</div>
+      <div class="f2_l_li">
+        <ul>
+          {FS_S_执法监管-list}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+  	<img src="/Templets/images/main_50.gif" alt="" />
+  </div>
+  <div class="f1">
+    <div class="f2_l">
+      <div class="f2_l_top"><span>旅游文化</span><a href="/html/lywh/">更多 >></a></div>
+      <div class="f2_l_img">{FS_S_旅游文化-图}</div>
+      <div class="f2_l_li">
+        <ul>
+          {FS_S_旅游文化-list}
+        </ul>
+      </div>
+    </div>
+    <div class="f2_c">
+        <div class="f2_c_top">
+          <ul class="tab_zzjs_" id="tab_zzjs_">
+           <li id="tab_zzjs_5" class="hovertab_zzjs" onclick="x:hover_zzjs_net(5,5,8);">投资政策</li>
+           <li id="tab_zzjs_6" class="nor_zzjs" onclick="x:hover_zzjs_net(6,5,8);">招商热点</li>
+           <li id="tab_zzjs_7" class="nor_zzjs" onclick="x:hover_zzjs_net(7,5,8);">区县开发</li>
+           <li id="tab_zzjs_8" class="nor_zzjs" onclick="x:hover_zzjs_net(8,5,8);">金融机构</li>
+          </ul>
+         </div>
+        <div class="f2_c_bot">
+         <div class="dis_zzjs_net" id="tab_zzjs_05">
+            <div class="f2_c_bot_li">
+               <ul>
+                 {FS_S_投资政策-list}
+                 </ul>
+            </div>
+         </div>
+         <div class="undis_zzjs_net" id="tab_zzjs_06">
+            <div class="f2_c_bot_li">
+               <ul>
+                 {FS_S_招商热点-list}
+                 </ul>
+            </div>
+         </div>
+         <div class="undis_zzjs_net" id="tab_zzjs_07">
+            <div class="f2_c_bot_li">
+               <ul>
+                 {FS_S_区县开发-list}     
+                 </ul>
+            </div>
+         </div>
+         <div class="undis_zzjs_net" id="tab_zzjs_08">
+            <div class="f2_c_bot_li">
+               <ul>
+                 {FS_S_金融机构-list}                 
+                 </ul>
+            </div>
+         </div>
+      </div>
+      </div>
+    <div class="f2_l">
+      <div class="f2_l_top"><span>投资信息</span><a href="/html/tzxx/">更多 >></a></div>
+      <div class="f2_l_img">{FS_S_投资信息-图}</div>
+      <div class="f2_l_li">
+        <ul>
+          {FS_S_投资信息-list}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="f1">
+    <div class="f1_r">
+        <div class="f1_r_top"><strong>站内搜索</strong></div>
+        <div class="f3_l_bot">
+          {FS_S_站内搜索}
+        </div>
+     </div>
+     <div class="f3_r">
+      <div class="f3_r_top"><span>专题学习</span><a href="/html/ztxx/">更多 >></a></div>
+      <div class="f3_r_bot">
+        <ul>
+          {FS_S_专题学习}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="f4">
+    <span>友情链接:</span>
+    <select onChange="if(this.value!='') window.open(this.value,'','');">
+      <option value="" selected="selected">国家部委网站</option>
+      <option value="http://www.mfa.gov.cn">外交部</option>
+      <option value="http://www.ndrc.gov.cn">发展改革委</option>
+      <option value="http://www.moe.gov.cn">教育部</option>
+      <option value="http://www.most.gov.cn">科技部</option>
+      <option value="http://www.seac.gov.cn">国家民委</option>
+      <option value="http://www.mps.gov.cn">公安部</option>
+      <option value="http://www.mos.gov.cn">监察部</option>
+      <option value="http://www.mca.gov.cn">民政部</option>
+    </select>
+    <select onChange="if(this.value!='') window.open(this.value,'','');">
+      <option value="" selected="selected">地方政务链接</option>
+      <option value="http://www.chengdu.gov.cn">成都市</option>
+      <option value="http://www.pzh.gov.cn">攀枝花市</option>
+      <option value="http://www.luzhou.gov.cn">泸州市</option>
+      <option value="http://www.deyang.gov.cn">德阳市</option>
+      <option value="http://www.mianyang.gov.cn">绵阳市</option>
+      <option value="http://www.cngy.gov.cn">广元市</option>
+      <option value="http://www.ziyang.gov.cn">资阳市</option>
+      <option value="http://www.ms.gov.cn">眉山市</option>
+      <option value="http://www.nanchong.gov.cn">南充市</option>
+      <option value="http://www.yb.gov.cn">宜宾市</option>
+      <option value="http://www.dazhou.gov.cn">达州市</option>
+      <option value="http://www.cnbz.gov.cn">巴中市</option>
+      <option value="http://www.zg.gov.cn">自贡市</option>
+      <option value="http://www.21-sf.net">什邡在线</option>
+      <option value="http://www.luxian.gov.cn">泸县人民政府</option>
+      <option value="http://www.cdqingyang.gov.cn">成都青羊区政府</option>
+    </select>
+    <select onChange="if(this.value!='') window.open(this.value,'','');">
+      <option value="" selected="selected">行业网站</option>
+      <option value="http://www.wuliangye.com.cn">五粮液集团</option>
+      <option value="http://sc.ct10000.com/cms/web/0831/index.shtml">电信宜宾分公司</option>
+      <option value="http://www.sc.10086.cn">移动宜宾分公司</option>
+      <option value="http://yb10010.com">联通宜宾分公司</option>
+      <option value="http://www.cttsc.com">铁通四川分公司</option>
+      <option value="http://www.ybty.com">天原股份有限公司</option>
+      <option value="http://www.cjnf.com.cn">中核建中核燃料</option>
+    </select>
+    <select onChange="if(this.value!='') window.open(this.value,'','');">
+      <option value="" selected="selected">新闻媒体网站</option>
+      <option value="http://www.ybtv.cc">宜宾电视台</option>
+      <option value="http://www.cctv.com">中国中央电视台</option>
+    </select>
+
+  </div>
+  <div class="ban">
+    {FS_S_版权信息}
+  </div>
+</div>
+</body>
+</html>
