@@ -7,8 +7,45 @@
     <meta name="Description" content="{FS_YMeta描述}" />
     <link type="text/css" rel="stylesheet" href="/Templets/YS/css/base.css" />
     <link type="text/css" rel="stylesheet" href="/Templets/YS/css/style.css" />
+    <link href="/Templets/YS/css/jquery.slideBox.css" rel="stylesheet" type="text/css" />
+    <script src="/Templets/YS/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="/Templets/YS/js/jquery.slideBox.js" type="text/javascript"></script>
+    <script>
+        jQuery(function($){
+	        $('#demo1').slideBox();
+	        //$('#demo2').slideBox({
+	        //	direction : 'top',//left,top#方向
+	        //	duration : 0.3,//滚动持续时间，单位：秒
+	        //	easing : 'linear',//swing,linear//滚动特效
+	        //	delay : 5,//滚动延迟时间，单位：秒
+	        //	startIndex : 1//初始焦点顺序
+	        //});
+	        //$('#demo3').slideBox({
+	        //	duration : 0.3,//滚动持续时间，单位：秒
+	        //	easing : 'linear',//swing,linear//滚动特效
+	        //	delay : 5,//滚动延迟时间，单位：秒
+	        //	hideClickBar : false,//不自动隐藏点选按键
+	        //	clickBarRadius : 10
+	        //});
+	        //$('#demo4').slideBox({
+	        //	hideBottomBar : true//隐藏底栏
+	        //});
+        });
+    </script>
+
 </head>
 <body>
+    <h3>一、左右轮播，滚动持续0.6秒，滚动延迟3秒，滚动效果swing，初始焦点第1张，点选按键自动隐藏，按键边框半径（IE8-只方不圆）5px（以上各项为默认设置值）</h3>
+    <div id="demo1" class="slideBox">
+        <ul class="items">
+            {FS_Y图片轮播}
+            <li><a href="http://www.jq22.com/" title="这里是测试标题一"><img src="/Templets/YS/img/1.jpg" /></a></li>
+            <li><a href="http://www.jq22.com/" title="这里是测试标题二"><img src="/Templets/YS/img/2.jpg" /></a></li>
+            <li><a href="http://www.jq22.com/" title="这里是测试标题三"><img src="/Templets/YS/img/3.jpg" /></a></li>
+            
+        </ul>
+    </div>
+
     <div class="wear">
         <div class="menu">
             <ul class="menu_ul">
