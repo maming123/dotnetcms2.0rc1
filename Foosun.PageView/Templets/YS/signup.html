@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="{FS_YMeta关键字}" />
+    <meta name="Description" content="{FS_YMeta描述}" />
+    <title>{FS_Y页面标题}</title>
+    <link href="/Templets/YS/css/public.css" rel="stylesheet" />
+    <link href="/Templets/YS/css/style.css" rel="stylesheet" />
+    <link href="/Templets/YS/unslider/style.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="/Scripts/validate.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            IsEmptyFocusOut("nickname", "姓名不能为空");
+            IsEmptyFocusOut("sex", "性别不能为空");
+            IsEmptyFocusOut("phone", "手机号码不能为空");
+            IsNumFocusOut("phone", "手机号码格式不正确");
+            IsEmptyFocusOut("className", "课程不能为空"); 
+            
+        });
+        function SignUp() {
+
+            var err = "";
+            err += IsEmptyGetErrMsg("nickname", "姓名不能为空");
+            err += IsEmptyGetErrMsg("sex", "性别不能为空");
+            err += IsEmptyGetErrMsg("phone", "手机号码不能为空");
+            err += IsNumGetErrMsg("phone", "手机号码格式不正确");
+            err += IsEmptyGetErrMsg("nickname", "姓名不能为空");
+            err += IsEmptyGetErrMsg("className", "课程不能为空");
+            if (err.length > 0) {
+                //alert(err);
+                return false;
+            } else {
+                //提交保存
+                $.ajax({
+                    type: "POST",
+                    url: "/ysweb/handler/pagehandler.ashx",
+                    data: { Action: "SignUp", t: Math.random() },
+                    timeout: 60000,
+                    dataType: "json",
+                    async: false,
+                    success: function (result) {
+                        if (result && typeof result == "object") {
+                            if (result.code == 1) {
+                                //成功
+                                alert("报名成功");
+                                //console.log(result);
+                            } else {
+                                alert(result.m);
+                            }
+                        }
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        alert("textStatus:" + textStatus + "  errorThrown:" + errorThrown);
+                    }
+                });
+            }
+        }
+    </script>
+</head>
+
+<body class="page">
+<div class="wrap">
+	<div class="page-head">
+        <div class="top">
+            <div class="logo"><img src="/Templets/YS/images/logo.png" /></div>
+            <div class="weixin">
+            	<p>用微信扫我</p>
+                <div class="wx-pic"><img src="/Templets/YS/images/wx.jpg" /></div>
+            </div>
+        </div>
+        <ul class="nav mb20">
+            {FS_Y首页总站导航1}
+        </ul>
+        <ul class="nav">
+            {FS_Y首页总站导航2}
+        </ul>
+    </div>
+	<div class="main clearfix">
+		<div class="regsiter">
+        	<div class="regsiter-tit"></div>
+            <ul>
+            	<li>
+                	<div class="xx"><label>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label><input type="text" id="nickName" /><i>*</i></div>
+                    <p class="error" id="nicknameErr"></p>
+                </li>
+                <li>
+                	<div class="xx"><label>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</label><input type="text" id="sex" /><i>*</i></div>
+                    <p class="error" id="sexErr"></p>
+                </li>
+                <li>
+                	<div class="xx"><label>手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机</label><input type="text" id="phone" /><i>*</i></div>
+                    <p class="error" id="phoneErr"></p>
+                </li>
+                <li>
+                	<div class="xx"><label>&nbsp;微&nbsp;信&nbsp;号</label><input type="text" id="wxCode" /><i></i></div>
+                	<p class="error"></p>
+                </li>
+                <li>
+                	<div class="xx"><label>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址</label><input type="text" id="address"/><i></i></div>
+                    <p class="error"></p>
+                </li>
+                <li>
+                	<div class="xx"><label>工作单位</label><input type="text" id="company"/><i></i></div>
+                	<p class="error"></p>
+                </li>
+                <li>
+                	<div class="xx"><label>报名课程</label><input type="text" id="className"/><i>*</i></div>
+                    <p class="error" id="classNameErr"></p>
+                </li>
+            </ul>
+            <button class="btn-reg" id="btnSubmit" onclick="SignUp();">确认报名</button>
+        </div>
+	</div>
+</div>
+<div class="footer">
+    {FS_Y版权信息}
+</div>
+</body>
+</html>

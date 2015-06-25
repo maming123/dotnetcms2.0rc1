@@ -55,6 +55,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\引用组件\LitJSON.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\引用组件\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -1454,6 +1458,7 @@
     <Content Include="Scripts\public.js" />
     <Content Include="Scripts\script_scroll.js" />
     <Content Include="Scripts\SelectAction.js" />
+    <Content Include="Scripts\validate.js" />
     <Content Include="search.aspx" />
     <Content Include="search.html" />
     <Content Include="SendMail.aspx" />
@@ -1675,30 +1680,22 @@
     <Content Include="Templets\images\main_57.gif" />
     <Content Include="Templets\images\zh_03.gif" />
     <Content Include="Templets\images\zh_06.gif" />
-    <Content Include="Templets\YS\Content\index.html" />
-    <Content Include="Templets\YS\css\base.css" />
+    <Content Include="Templets\YS\class_leftlist.html" />
+    <Content Include="Templets\YS\class.html" />
+    <Content Include="Templets\YS\class_pic.html" />
+    <Content Include="Templets\YS\contact.html" />
+    <Content Include="Templets\YS\css\public.css" />
     <Content Include="Templets\YS\css\style.css" />
-    <Content Include="Templets\YS\images\fanye.png" />
-    <Content Include="Templets\YS\images\lie_03.gif" />
-    <Content Include="Templets\YS\images\main_02.gif" />
-    <Content Include="Templets\YS\images\main_04.gif" />
-    <Content Include="Templets\YS\images\main_06.gif" />
-    <Content Include="Templets\YS\images\main_11.gif" />
-    <Content Include="Templets\YS\images\main_13.gif" />
-    <Content Include="Templets\YS\images\main_16.gif" />
-    <Content Include="Templets\YS\images\main_21.gif" />
-    <Content Include="Templets\YS\images\main_26.gif" />
-    <Content Include="Templets\YS\images\main_28.gif" />
-    <Content Include="Templets\YS\images\main_31.gif" />
-    <Content Include="Templets\YS\images\main_33.gif" />
-    <Content Include="Templets\YS\images\main_40.gif" />
-    <Content Include="Templets\YS\images\main_43.gif" />
-    <Content Include="Templets\YS\images\main_47.gif" />
-    <Content Include="Templets\YS\images\main_50.gif" />
-    <Content Include="Templets\YS\images\main_54.gif" />
-    <Content Include="Templets\YS\images\main_57.gif" />
-    <Content Include="Templets\YS\images\zh_03.gif" />
-    <Content Include="Templets\YS\images\zh_06.gif" />
+    <Content Include="Templets\YS\images\logo.png" />
+    <Content Include="Templets\YS\images\wx.jpg" />
+    <Content Include="Templets\YS\index.html" />
+    <Content Include="Scripts\jquery-1.11.1.min.js" />
+    <Content Include="Templets\YS\signup.html" />
+    <Content Include="Templets\YS\unslider\jquery.event.move.js" />
+    <Content Include="Templets\YS\unslider\jquery.event.swipe.js" />
+    <Content Include="Templets\YS\unslider\jquery.min.js" />
+    <Content Include="Templets\YS\unslider\style.css" />
+    <Content Include="Templets\YS\unslider\unslider.min.js" />
     <Content Include="TopNews.aspx" />
     <Content Include="Update\index.aspx" />
     <Content Include="Update\SQL\menu.sql" />
@@ -4350,6 +4347,16 @@
       <DependentUpon>PublishPage.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ysbusiness\BaseCommon.cs" />
+    <Compile Include="ysbusiness\BaseHandler.cs" />
+    <Compile Include="ysbusiness\ConnectionStrings.cs" />
+    <Compile Include="ysbusiness\ExceptionType.cs" />
+    <Compile Include="ysbusiness\RequestKeeper.cs" />
+    <Compile Include="ysbusiness\ReturnJsonType.cs" />
+    <Compile Include="ysbusiness\SqlHelper.cs" />
+    <Compile Include="ysweb\handler\PageHandler.ashx.cs">
+      <DependentUpon>PageHandler.ashx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="configuration\config\api.config" />
@@ -4437,11 +4444,15 @@
     <Folder Include="html2\" />
     <Folder Include="jsfiles\js\" />
     <Folder Include="Logs\public\" />
+    <Folder Include="Templets\YS\js\" />
     <Folder Include="userfiles\CustomForm\" />
     <Folder Include="userfiles\discuss\" />
     <Folder Include="xml\Content\flashfilt\" />
     <Folder Include="xml\sys\Channel\ChParams\" />
     <Folder Include="xml\sys\check\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ysweb\handler\PageHandler.ashx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
