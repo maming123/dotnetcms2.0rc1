@@ -1687,7 +1687,16 @@
     <Content Include="Templets\YS\contact.html" />
     <Content Include="Templets\YS\css\public.css" />
     <Content Include="Templets\YS\css\style.css" />
+    <Content Include="Templets\YS\images\icon.jpg" />
+    <Content Include="Templets\YS\images\icon.png" />
+    <Content Include="Templets\YS\images\index-body-bg.jpg" />
+    <Content Include="Templets\YS\images\logo.jpg" />
     <Content Include="Templets\YS\images\logo.png" />
+    <Content Include="Templets\YS\images\p1.jpg" />
+    <Content Include="Templets\YS\images\page-body-bg.jpg" />
+    <Content Include="Templets\YS\images\regsiter.png" />
+    <Content Include="Templets\YS\images\subnav-li.png" />
+    <Content Include="Templets\YS\images\subnav-line.jpg" />
     <Content Include="Templets\YS\images\wx.jpg" />
     <Content Include="Templets\YS\index.html" />
     <Content Include="Scripts\jquery-1.11.1.min.js" />
@@ -4463,6 +4472,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ysweb\handler\PageHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\配置文件1.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
