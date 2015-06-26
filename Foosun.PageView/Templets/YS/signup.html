@@ -32,11 +32,18 @@
                 //alert(err);
                 return false;
             } else {
+                var nickName =$("#nickName").val();
+                var sex =$("#sex").val();
+                var phone =$("#phone").val();
+                var wxCode =$("#wxCode").val();
+                var address =$("#address").val();
+                var company =$("#company").val();
+                var className =$("#className").val();
                 //提交保存
                 $.ajax({
                     type: "POST",
                     url: "/ysweb/handler/pagehandler.ashx",
-                    data: { Action: "SignUp", t: Math.random() },
+                    data: { Action: "SignUp", nickName: nickName, sex: sex, phone: phone, wxCode: wxCode, address: address, company: company, className: className, t: Math.random() },
                     timeout: 60000,
                     dataType: "json",
                     async: false,

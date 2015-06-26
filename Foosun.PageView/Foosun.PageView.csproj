@@ -1439,6 +1439,7 @@
     <Content Include="manage\user\userlist.aspx" />
     <Content Include="manage\user\usermycom.aspx" />
     <Content Include="manage\user\usermycomupdate.aspx" />
+    <Content Include="manage\ysweb\SignUpManage.aspx" />
     <Content Include="page.aspx" />
     <Content Include="Scripts\jquery-ui-1.10.2.custom.js" />
     <Content Include="Scripts\jquery-ui-1.10.2.custom.min.js" />
@@ -3411,6 +3412,13 @@
     <Compile Include="manage\user\usermycomupdate.aspx.designer.cs">
       <DependentUpon>usermycomupdate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="manage\ysweb\SignUpManage.aspx.cs">
+      <DependentUpon>SignUpManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage\ysweb\SignUpManage.aspx.designer.cs">
+      <DependentUpon>SignUpManage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="page.aspx.cs">
       <DependentUpon>page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -4353,7 +4361,9 @@
     <Compile Include="ysbusiness\ExceptionType.cs" />
     <Compile Include="ysbusiness\RequestKeeper.cs" />
     <Compile Include="ysbusiness\ReturnJsonType.cs" />
+    <Compile Include="ysbusiness\SignUp\SignUpBusiness.cs" />
     <Compile Include="ysbusiness\SqlHelper.cs" />
+    <Compile Include="ysbusiness\TypeConvert.cs" />
     <Compile Include="ysweb\handler\PageHandler.ashx.cs">
       <DependentUpon>PageHandler.ashx</DependentUpon>
     </Compile>

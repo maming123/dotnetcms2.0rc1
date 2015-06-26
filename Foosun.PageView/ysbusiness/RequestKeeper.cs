@@ -198,7 +198,7 @@ namespace DMedia.FetionActivity.Module
         {
             if (string.IsNullOrEmpty(input))
             {
-                return null;
+                return "";
             }
 
             string p = @"exec[\s]{1,}|insert[\s]{1,}into[\s]{1,}|select[\s\S]{1,}from|delete[\s]{1,}|update[\s]{1,}|truncate[\s]{1,}table|--";
