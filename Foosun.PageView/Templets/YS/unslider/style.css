@@ -42,7 +42,7 @@
 	}
 	.banner ul li a img{ width:1000px; height:300px; display:block;}
 	.banner .inner {
-		background:#000; opacity: 0.4; height:50px; position:relative; bottom:0; left:0; margin-top:130px;
+		/*background:#000;*/ opacity: 0.4; height:50px; position:relative; bottom:0; left:0; margin-top:130px;
 	}
 	.banner .inner p{  height:40px; line-height:40px; width:90%; overflow:hidden; position:absolute; top:0; left:5%; font-size:13px; text-align:center; color:#fff; }
 
